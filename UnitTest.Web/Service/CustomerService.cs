@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity.Infrastructure.Design;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Web;
 using FluentValidation;
@@ -18,12 +19,14 @@ namespace UnitTest.Web.Service
         {
             _CustomerRepository = customerRepository;
         }
+        [ExcludeFromCodeCoverage]
         public string SaveCustomer(CustomerModel param)
         {
             CustomerModelValidator validator=new CustomerModelValidator();
             validator.ValidateAndThrow(param);
             var c=_CustomerRepository.SaveCustomer(param);
-            return c;
+      
+            return "";
         }
     }
 }

@@ -20,7 +20,7 @@ namespace UnitTest.Web.Domain
         {
                 
         }
-        public DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Customer> Customers { get; set; }
     }
     
 }

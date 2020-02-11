@@ -164,7 +164,6 @@
     <Compile Include="Repository\ICustomerRepository.cs" />
     <Compile Include="Service\CustomerService.cs" />
     <Compile Include="Service\ICustomerService.cs" />
-    <Compile Include="Test\Customer\CustomerServiceTest.cs" />
     <Compile Include="Validator\CustomerModelValidator.cs" />
   </ItemGroup>
   <ItemGroup>
